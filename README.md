@@ -10,8 +10,9 @@ jQuery
 Modernizr - media query support
 
 # How to use
--Assign an object literal to a variable, and set the options you want.
--instantiate a new smooth_moove function and add the variable from the object literal as the args.
+Assign an object literal to a variable, and set the options you want.
+
+instantiate a new smooth_moove function and add the variable from the object literal as the args.
 
 # Options
     tel_responsive_placement = {
