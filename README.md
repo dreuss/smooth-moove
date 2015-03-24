@@ -10,6 +10,8 @@ jQuery
 Modernizr - media query support
 
 # How to use
+Include Dependencies: jQuery, Modernizr-mq support
+
 Assign an object literal to a variable, and set the options you want.
 
     tel_responsive_placement = {
