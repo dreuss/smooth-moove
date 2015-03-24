@@ -25,6 +25,9 @@ Modernizr - media query support
 
 # Defaults
 mobile_append: 'appendTo'
+
 desktop_append: 'appendTo'
+
 max_width: '767px'
+
 min_width: '768px'
