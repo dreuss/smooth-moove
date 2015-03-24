@@ -5,8 +5,8 @@ function smooth_moove(args){
   args.min_width = typeof args.min_width !== 'undefined' ? args.min_width : '768px';
 
   var $item = $( args.item );
-  var $MobileDest = $( args.mobile_dest );
-  var $DesktopDest = $( args.desktop_dest );
+  var $mobileDest = $( args.mobile_dest );
+  var $desktopDest = $( args.desktop_dest );
 
   function smooth_append_style(item, append_style, destination){    
     switch(append_style){
@@ -33,10 +33,10 @@ function smooth_moove(args){
 
   if (Modernizr.mq('(max-width: '+args.max_width+')')) {
     $item.detach();
-    smooth_append_style($item, args.mobile_append, args.mobile_dest );
+    smooth_append_style($item, args.mobile_append, $mobileDest );
   }
   if (Modernizr.mq('(min-width: '+args.min_width+')')) {
     $item.detach();
-    smooth_append_style($item, args.desktop_append, args.desktop_dest );
+    smooth_append_style($item, args.desktop_append, $desktopDest );
   }
 }
