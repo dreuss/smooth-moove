@@ -1,3 +1,7 @@
+//https://github.com/dreuss/smooth-moove
+//A js plugin built to accommodate the adaptive design pattern where html elements need to move about the DOM 
+//depending on their mobile / desktop context.
+
 function smooth_moove(args){
   args.mobile_append = typeof args.mobile_append !== 'undefined' ? args.mobile_append : 'appendTo';
   args.desktop_append = typeof args.desktop_append !== 'undefined' ? args.desktop_append : 'appendTo';
