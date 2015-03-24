@@ -16,7 +16,7 @@ Instantiate a new smooth_moove function and add the variable from the object lit
 
 Place instantiated smooth_moove function into:
 
-    `$(document).ready(function() {
+    $(document).ready(function() {
         //Make the call to move your elements around the DOM
         new smooth_moove(tel_responsive_placement);
     });
