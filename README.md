@@ -12,18 +12,19 @@ Modernizr - media query support
 # How to use
 Assign an object literal to a variable, and set the options you want.
 
-instantiate a new smooth_moove function and add the variable from the object literal as the args.
+Instantiate a new smooth_moove function and add the variable from the object literal as the args.
 
-# Options
-    tel_responsive_placement = {
-      item: ".tel",                 //item that needs moving
-      mobile_append: "appendTo",    //can use append, appendTO, prepend, prependTo, insertBefore, insertAfter
-      mobile_dest: ".header",       //mobile html desination sibling
-      desktop_append: "appendTo",   //can use append, appendTO, prepend, prependTo, insertBefore, insertAfter
-      desktop_dest: ".middle",      //desktop html destination sibling
-      max_width: "920px",           //max-break
-      min_width: "921px"            //min-break
-    }
+Place instantiated smooth_moove function into:
+
+    `$(document).ready(function() {
+        //Make the call to move your elements around the DOM
+        new smooth_moove(tel_responsive_placement);
+    });
+
+    //Need this for when Window is resized, changed, loaded.
+    $(window).on('resize orientationchange', function() {
+        new smooth_moove(tel_responsive_placement);
+    });
 
 # Defaults
 mobile_append: 'appendTo'
@@ -33,3 +34,24 @@ desktop_append: 'appendTo'
 max_width: '767px'
 
 min_width: '768px'
+
+# Full Example
+    $(document).ready(function() {
+        tel_responsive_placement = {
+        item: ".tel",                 //item that needs moving
+        mobile_append: "appendTo",    //can use append, appendTO, prepend, prependTo, insertBefore, insertAfter
+        mobile_dest: ".header",       //mobile html desination sibling
+        desktop_append: "appendTo",   //can use append, appendTO, prepend, prependTo, insertBefore, insertAfter
+        desktop_dest: ".middle",      //desktop html destination sibling
+        max_width: "920px",           //max-break
+        min_width: "921px"            //min-break
+    }
+
+        //Make the call to move your elements around the DOM
+        new smooth_moove(tel_responsive_placement);
+    });
+
+    //Need this for when Window is resized, changed, loaded.
+    $(window).on('resize orientationchange', function() {
+        new smooth_moove(tel_responsive_placement);
+    });
