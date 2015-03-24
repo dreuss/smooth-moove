@@ -1,0 +1,24 @@
+body *{padding:2%; color: #eee; display:block; width: 96%; font-size: 20px; margin: 0 0 15px 0;}
+body{background: #fff;}
+
+body header *{background: #999;}
+body .middle p{color: #000;}
+
+body .middle .tel{background: blue;}
+body .header .tel{background: red;}
+
+body footer .tel{background: green;}
+
+.header .logo,
+.header .logo a{
+  background: #000;
+}
+
+.middle .logo{background: #2C3E50;}
+
+body .logo a{padding: 0;}
+body footer img{float:left; width: 31%; margin: 0 3% 0 0; padding:2px;}
+.photos{float:left; margin:0;}
+.photos img:last-child{margin:0;}
+body footer .photos{background: #F19B60;}
+body footer .photos{background: #4BA95B;}
